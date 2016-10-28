@@ -6,4 +6,4 @@ Template.signin.events({
     Meteor.loginWithPassword(email,password);
     FlowRouter.go('/');
   }
-})
+});

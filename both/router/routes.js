@@ -19,11 +19,11 @@ FlowRouter.route('/signin',{
 
 FlowRouter.route('/signout',{
   action:function(){
-      Meteor.logout(function(err)){
+      Meteor.logout(function(err){
         if(!err){
-          FlowRouter.go(./'signin')
+          FlowRouter.go('/signin')
         }
-      }
+      })
   }
 });
 

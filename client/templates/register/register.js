@@ -5,7 +5,9 @@ Template.register.events({
   var password = evt.target.password.value;
   Accounts.createUser({
     email:email,
-    password:password
+    password:password,
+    firstname:firstname,
+    lastname:lastname
   })
   }
 });

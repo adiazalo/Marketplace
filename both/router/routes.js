@@ -13,7 +13,13 @@ FlowRouter.route('/register',{
 
 FlowRouter.route('/signin',{
   action:function(){
-    FlowLayout.render('layout',{sidebar:'',main:'signin',cart:''}); // empty out cart});
+    FlowLayout.render('layout',{sidebar:'',main:'signin',cart:''});
+  }
+});
+
+FlowRouter.route('/profile',{
+  action:function(){
+    FlowLayout.render('layout',{sidebar:'',main:'profile',cart:''}); 
   }
 });
 

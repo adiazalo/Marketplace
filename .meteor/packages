@@ -25,3 +25,5 @@ meteorhacks:flow-layout       #Layout
 meteorhacks:flow-router       #Routing
 mrt:bootstrap-3               #Styling
 accounts-password
+alanning:roles
+fortawesome:fontawesome

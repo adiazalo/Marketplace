@@ -1,4 +1,4 @@
-Meteor.startup(function()[
+Meteor.startup(function(){
   Accounts.onCreateUser(function(options,user){
     //is user has a profile
     if(!user.profile){
@@ -13,5 +13,5 @@ Meteor.startup(function()[
     if (userData.emails[0].address === 'george@home.com'){
       Roles.addUsersToRoles(userData,['admin']);
     }
-  });
-]);
+  })
+});

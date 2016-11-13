@@ -14,16 +14,16 @@
           {{/if}}
           <li><a href="/profile">Profile</a></li>
           <li><a href="/cart"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-        {{#if currentUser}}
-          <div class="navbar-right plain">
-            <a href="/signout" class="btn btn-danger navbar-btn"><i class="fa fa-lock"></i>Sign Out {{currentUser.profile.firstname}} {{currentUser.profile.lastname}}</a> <!-- lock icon -->
-          </div> <!-- include package for lock icon -->
-        {{else}}
+        </ul>
         <div class="navbar-right plain">
+          {{#if currentUser}}
+            <a style="..." href="/signout" class="btn btn-danger navbar-btn"><i class="fa fa-lock"></i>Sign Out {{currentUser.profile.firstname}} {{currentUser.profile.lastname}}</a> <!-- lock icon --> <!-- include package for lock icon -->
+
+        {{else}}
           <a href="/signin" class="btn btn-default navbar-btn">Sign In</a>
           <a href="/register" class="btn btn-primary navbar-btn">Register</a>
-        </div>
         {{/if}}
+      </div>
       </div>
     </div>
   </nav>

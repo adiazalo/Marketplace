@@ -1,4 +1,7 @@
 FlowRouter.route(['/','/home'],{ // two choices for route
+  subscriptions:function(){
+    Meteor.subscribe('category');
+  },
   action:function(){
     console.log("Running Action to render templates into layouts");
     FlowLayout.render('layout',{sidebar:'sidebar',main:'home',cart:'cart'});

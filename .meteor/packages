@@ -26,3 +26,5 @@ mrt:bootstrap-3               #Styling
 accounts-password
 alanning:roles
 fortawesome:fontawesome
+matb33:collection-hooks
+dburles:collection-helpers

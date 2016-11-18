@@ -1,4 +1,5 @@
 <template name="admin">
+    {{>categoryAdmin}}
   <div class="col-sm-6">
     <h2 class="heading">Product Administration</h2>
     <div class="form-group">
@@ -10,7 +11,7 @@
       <!--<input id="category" type="type" class="form-control input-sm"/>-->
       <select name="category" id="category" class="form-control">
         {{#each categories}}
-        <option value="{{_id)}}">{{name}}</option>
+        <option value="{{name}}">{{name}}</option>
        {{/each}}
       </select>
     </div>
@@ -41,9 +42,9 @@
     </div>
     <div class="col-sm-4"></div>
   </div>
-  
-  
-  
+
+
+
     <div class="col-md-6">
       <table class="table table-striped table-bordered table-responsive table-hover">
         <thead>

@@ -1,6 +1,6 @@
 FlowRouter.route(['/','/home'],{ // two choices for route
-  subscriptions:function(){
-    Meteor.subscribe('category');
+    subscriptions:function(){
+    this.register('categorieslist',Meteor.subscribe('category'));
   },
   action:function(){
     console.log("Running Action to render templates into layouts");
@@ -9,6 +9,9 @@ FlowRouter.route(['/','/home'],{ // two choices for route
 });
 
 FlowRouter.route('/admin',{
+    subscriptions:function(){
+    this.register('categorieslist',Meteor.subscribe('category'));
+  },
   action:function(){
     if(Roles.userIsInRole(Meteor.userId(),'admin')){
       FlowLayout.render('layout',{sidebar:'',main:'admin',cart:''});

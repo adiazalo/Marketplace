@@ -32,7 +32,7 @@ FlowRouter.route('/signin',{
 
 FlowRouter.route('/profile',{
   action:function(){
-    FlowLayout.render('layout',{sidebar:'',main:'profile',cart:''}); 
+    FlowLayout.render('layout',{sidebar:'',main:'profile',cart:''});
   }
 });
 
@@ -56,7 +56,7 @@ FlowRouter.route('/checkout',{
 FlowRouter.route('/category/:categoryName',{
   // subscriptions callback
   subscriptions:function(params){
-    console.log("SUBSCRIBE",params);
+    Meteor.subscribe('category');
     // make sure substrictions are available
   },
   // triggersEnter callback

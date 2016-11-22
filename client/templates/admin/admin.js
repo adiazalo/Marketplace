@@ -19,5 +19,8 @@ Template.admin.events({
       $('#productForm')[0].reset();
       $('#productname').focus();
     })
-  }
+  },
+    'click .removeProduct':function(evt,tmpl){
+      Meteor.call('Product.remove',this._id);
+    }
 });

@@ -59,10 +59,14 @@
         <tbody>
         {{#each products}}
         <tr>
-          <td>Apple Crisp</td>
-          <td>$12.99</td>
-          <td>Fruity</td>
-          <td><i class="fa fa-trash alert-danger"></i></td>
+          <td>{{name}}</td>
+          <td>${{price}}</td>
+          <td>{{category.name}}</td>
+          <td><i class="fa fa-trash alert-danger removeProduct"></i></td>
+        </tr>
+        {{else}}
+        <tr>
+            <td colspan="4">No Products Found!</td>
         </tr>
         {{/each}}
         </tbody>
